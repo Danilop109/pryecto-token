@@ -6079,11 +6079,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Api\\Api.csproj",
+      "projectUniqueName": "c:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Api\\Api.csproj",
+      "projectPath": "c:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\APT01-43\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Api\\obj\\",
+      "outputPath": "c:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\APT01-43\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6098,8 +6098,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Aplicacion\\Aplicacion.csproj": {
-              "projectPath": "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Aplicacion\\Aplicacion.csproj"
+            "c:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Aplicacion\\Aplicacion.csproj": {
+              "projectPath": "c:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Aplicacion\\Aplicacion.csproj"
             }
           }
         }

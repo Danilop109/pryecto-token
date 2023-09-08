@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "727Yz3GqT3LYo3Fhq4jJPbCPsRWmhB7h6M6aVbuZof8FBIwwsE4MdLQOxb8G+b40bgtbXr58t0knUcBVP/2jKA==",
+  "dgSpecHash": "meE07kdLWbV2EVEanbT/ivjM/4UMHtBWKmtVX5rr285uMNkil5sbpWhpsugWjEFiUek7yf8N16XVvEdAUTAV3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Aplicacion\\Aplicacion.csproj",
+  "projectFilePath": "c:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Aplicacion\\Aplicacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\APT01-43\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\APT01-43\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
