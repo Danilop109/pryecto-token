@@ -37,6 +37,8 @@ namespace Api.Extensions;
     public static void AddJwt(this IServiceCollection services, IConfiguration configuration)
     {
         //configuracion de los appsetting
+        services.Configure<JWT>(configuration.GetSection("JWT"));
+        //Adding -JWT
         services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -53,9 +55,9 @@ namespace Api.Extensions;
                 ValidateAudience= true,
                 ValidateLifetime = true,
                 ClockSkew= TimeSpan.Zero,
-                ValidIssuer = configuration["JWT: Issuer"],
-                ValidAudience = configuration["JWT: Audience"],
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT: Key"]))
+                ValidIssuer = configuration["JWT:Issuer"],//ES MUY IMPORTANTE QUE NO TENGA ESPACIOS DESPUES DE LOS DOS PUNTOS
+                ValidAudience = configuration["JWT:Audience"],
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Key"]))
 
             };
         });

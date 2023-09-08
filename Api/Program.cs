@@ -1,4 +1,6 @@
 using Api.Extensions;
+using Api.Helpers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Persistencia;
 
@@ -8,11 +10,22 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddHttpContextAccessor();//JWT, nos permite que podamos implementar la autorizacion de roles
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddAplicacionServices();
+
 builder.Services.AddJwt(builder.Configuration);
-builder.Services.AddHttpContextAccessor();//JWT 
+
+builder.Services.AddAuthorization(opts =>{
+    opts.DefaultPolicy= new AuthorizationPolicyBuilder()
+    .RequireAuthenticatedUser()
+    .AddRequirements(new GlobalVerbRoleRequirement())
+    .Build();
+});
+
 builder.Services.AddDbContext<ApiTokenContext>(Options =>
 {
     string connectionString = builder.Configuration.GetConnectionString("conexMysql");
@@ -32,7 +45,7 @@ app.UseCors("CorsPolicy");
 
 app.UseHttpsRedirection();
 
-app.UseAuthentication();//se coloca con el JWT, EN ESTE CASO ES IMPOTANTE QUE AUTENTICACION VAYA PRIMERO
+// app.UseAuthentication();//se coloca con el JWT, EN ESTE CASO ES IMPOTANTE QUE AUTENTICACION VAYA PRIMERO
 app.UseAuthorization();
 
 app.MapControllers();

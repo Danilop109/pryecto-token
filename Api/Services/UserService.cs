@@ -36,7 +36,7 @@ namespace Api.Services;
             };
             usuario.Password = _passwordHasher.HashPassword(usuario, registerDto.Password);
             var usuarioExiste= _unitOfWork.Users.Find(u => u.UserName.ToLower()== registerDto.Username.ToLower()).FirstOrDefault();
-            if (usuarioExiste!=null)
+            if (usuarioExiste==null)
             {
                 try
                 {
@@ -135,7 +135,7 @@ namespace Api.Services;
             var roleClaims = new List<Claim>();
             foreach (var role in Rols)
             {
-                roleClaims.Add(new Claim("Rols", role.Nombre));
+                roleClaims.Add(new Claim("roles", role.Nombre));
             }
 
             var claims = new []
