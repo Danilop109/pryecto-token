@@ -5235,19 +5235,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\APT01-43\\.nuget\\packages\\": {}
+    "/Users/alejandromunoz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Aplicacion\\Aplicacion.csproj",
+      "projectUniqueName": "/Users/alejandromunoz/Desktop/pryecto-token/Aplicacion/Aplicacion.csproj",
       "projectName": "Aplicacion",
-      "projectPath": "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Aplicacion\\Aplicacion.csproj",
-      "packagesPath": "C:\\Users\\APT01-43\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Aplicacion\\obj\\",
+      "projectPath": "/Users/alejandromunoz/Desktop/pryecto-token/Aplicacion/Aplicacion.csproj",
+      "packagesPath": "/Users/alejandromunoz/.nuget/packages/",
+      "outputPath": "/Users/alejandromunoz/Desktop/pryecto-token/Aplicacion/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\APT01-43\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/alejandromunoz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -5259,11 +5259,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Dominio\\Dominio.csproj"
+            "/Users/alejandromunoz/Desktop/pryecto-token/Dominio/Dominio.csproj": {
+              "projectPath": "/Users/alejandromunoz/Desktop/pryecto-token/Dominio/Dominio.csproj"
             },
-            "c:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "c:\\Users\\APT01-43\\Documents\\DB_proyectos\\pryecto-token\\Persistencia\\Persistencia.csproj"
+            "/Users/alejandromunoz/Desktop/pryecto-token/Persistencia/Persistencia.csproj": {
+              "projectPath": "/Users/alejandromunoz/Desktop/pryecto-token/Persistencia/Persistencia.csproj"
             }
           }
         }
@@ -5293,7 +5293,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
       }
     }
   }
